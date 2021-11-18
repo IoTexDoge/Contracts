@@ -815,9 +815,9 @@ contract IoTeXDoge is Context, IERC20, Ownable {
 
     function openTrading() external onlyOwner {
         _burnFee = 1;
-        _redistributionFee = 2;
-        _marketingFee = 1;
-        _liquidityFee = 3;
+        _redistributionFee = 3;
+        _marketingFee = 3;
+        _liquidityFee = 2;
         tradingOpen = true;
         launchTime = block.timestamp;
     }
